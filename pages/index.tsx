@@ -39,7 +39,7 @@ const Home: NextPage = () => {
     }
   ]
   return (
-    <div className="bg-gradient-to-r from-slate-200 to-slate-100">
+    <div className="bg-[url('/assets/images/white-bg.jpg')] bg-fixed bg-cover bg-center">
       <div className="py-12 max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-8">
         {meats.map((meat) => (
           <ProductCard
