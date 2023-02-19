@@ -10,7 +10,7 @@ type Props = {
 const ProductCard = ({ name, img, price, description }: Props) => {
   return (
     <>
-      <div className="card w-96 glass shadow-xl">
+      <div className="card w-96 glass shadow-xl transform duration-200 ease-in-out hover:scale-105">
         <figure>
           <img src={img} alt={name} />
         </figure>
