@@ -8,26 +8,46 @@ const Home: NextPage = () => {
     {
       name: "A5 MIYAZAKI JAPANESE WAGYU NY STRIP (14-16oz. Each)",
       price: "119.95",
+      img: "https://www.subicmeatsandseafoods.com/wp-content/uploads/2022/07/img_5015.jpeg",
       description:
         "Japan Premium Beef carries imported Wagyu Beef from the Miyazaki prefecture of Japan. This is called ” MiyazakiGyu” and it’s Rated “A5” by the Japanese Government beef grading system."
     },
     {
       name: "A5 MIYAZAKI JAPANESE WAGYU FILET MIGNON (7-8oz. Each)",
       price: "109.95",
+      img: "https://www.subicmeatsandseafoods.com/wp-content/uploads/2022/07/img_5017.jpeg",
+      description:
+        "All Japanese A5 Wagyu arrives with Certificate of Authenticity that includes the nose print of the cow."
+    },
+    {
+      name: "A5 MIYAZAKI JAPANESE WAGYU FILET MIGNON (7-8oz. Each)",
+      price: "109.95",
+      img: "https://www.subicmeatsandseafoods.com/wp-content/uploads/2022/07/img_5017.jpeg",
+      description:
+        "All Japanese A5 Wagyu arrives with Certificate of Authenticity that includes the nose print of the cow."
+    },
+    {
+      name: "A5 MIYAZAKI JAPANESE WAGYU FILET MIGNON (7-8oz. Each)",
+      price: "109.95",
+      img: "https://www.subicmeatsandseafoods.com/wp-content/uploads/2022/07/img_5017.jpeg",
       description:
         "All Japanese A5 Wagyu arrives with Certificate of Authenticity that includes the nose print of the cow."
     }
   ]
   return (
-    <div className="container mx-auto">
-      {meats.map((meat, i) => (
-        <ProductCard
-          key={i}
-          name={meat.name}
-          price={meat.price}
-          description={meat.description}
-        />
-      ))}
+    <div className="container mx-auto bg-[url('https://www.subicmeatsandseafoods.com/wp-content/uploads/2022/07/img_5017.jpeg')]">
+      {/* <div className="grid grid-cols-3 gap-4"> */}
+      <div className="py-12 max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8">
+        {meats.map((meat, i) => (
+          <ProductCard
+            key={i}
+            name={meat.name}
+            img={meat.img}
+            price={meat.price}
+            description={meat.description}
+          />
+        ))}
+      </div>
     </div>
   )
 }
