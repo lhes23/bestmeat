@@ -35,9 +35,8 @@ const Home: NextPage = () => {
     }
   ]
   return (
-    <div className="container mx-auto bg-[url('https://www.subicmeatsandseafoods.com/wp-content/uploads/2022/07/img_5017.jpeg')]">
-      {/* <div className="grid grid-cols-3 gap-4"> */}
-      <div className="py-12 max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8">
+    <div className="bg-gradient-to-r from-orange-200 to-white">
+      <div className="py-12 max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-8">
         {meats.map((meat, i) => (
           <ProductCard
             key={i}
